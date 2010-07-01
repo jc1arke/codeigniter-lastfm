@@ -1,0 +1,5 @@
+Lastfm library for CodeIgniter.
+
+Will currently work with any unauthenticated GET requests.
+
+For a list of available requests see: http://www.last.fm/api/intro

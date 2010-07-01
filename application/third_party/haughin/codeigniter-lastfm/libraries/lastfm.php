@@ -6,6 +6,13 @@
 		private $_base_url = 'http://ws.audioscrobbler.com/2.0/';
 		private $_session_key = 'lastfm_token';
 		
+		private static $_curl_opts = array(
+			CURLOPT_CONNECTTIMEOUT => 10,
+			CURLOPT_RETURNTRANSFER => TRUE,
+			CURLOPT_TIMEOUT        => 60,
+			CURLOPT_USERAGENT      => 'codeigniter-lastfm-2.0'
+		);
+		
 		private $_api_key = '';
 		private $_api_secret = '';
 		
